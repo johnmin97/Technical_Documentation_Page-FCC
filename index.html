@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Excel Technical Documentation Page</title>
+    <link rel="stylesheet" type="text/css" href="css/documentation.css">
+  </head>
+  <body>
+    <nav id="nav-bar">
+      <header>Microsoft Excel Documentation<header>
+        <ul id="nav-lists">
+          <li class="nav-list">
+            <a class="nav-link" href="#Introduction">Introduction</a>
+          </li>
+          <li class="nav-list">
+            <a class="nav-link" href="#Formulas">Formulas</a>
+          </li>
+          <li class="nav-list">
+            <a class="nav-link" href="#Functions">Functions</a>
+          </li>
+          <li class="nav-list">
+            <a class="nav-link" href="#Export&Import">Export & Import</a>
+          </li>
+          <li class="nav-list">
+            <a class="nav-link" href="#Analysis">Analysis</a>
+          </li>
+          <!--
+          <li class="nav-list">
+            <a class="nav-link" href="#Format">Format</a>
+          </li>
+          -->
+        </ul>
+<div class="demo-wrap">
+<div class="demo-content">
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+          <article>
+            <p>Microsoft Excel is the industry leading spreadsheet software program, a powerful data visualization and analysis tool. It is developed by Microsoft for Windows, macOS, Android and iOS. It features calculation or computation capabilities, graphing tools, pivot tables, and a macro programming language called Visual Basic for Applications. Excel forms part of the Microsoft Office suite of software.</p>
+            <p>Excel definition: a software program created by Microsoft that uses spreadsheets to organize numbers and data with formulas and functions. Excel analysis is ubiquitous around the world and used by businesses of all sizes to perform financial analysis.</p>
+            <p>Uses of Excel:</p>
+            <ul>
+              <li>
+                Data Entry
+              </li>
+              <li>
+                Data Management
+              </li>
+              <li>
+                Accounting
+              </li>
+              <li>
+                Financial Analysis & Modeling
+              </li>
+              <li>
+                Charting and Graphing
+              </li>
+              <li>
+                Programming
+              </li>
+              <li>
+                Time & Task Management
+              </li>
+              <li>
+                Customer Relationship Management
+              </li>
+              <li>
+                Other organizing tasks
+              </li>
+
+          </article>
+      </section>
+      <section class="main-section" id="Formulas">
+        <header>Formulas</header>
+          <article>
+            <p>A formula is an expression that uses cell references or hard-coded numbers to calculate the value of a cell. Sometimes a simple formula is all you need to get the right answer</p>
+            <p>Ever been guilty of using Excel as a fancy calculator?  If so, you’d just be using a formula in Excel. </p>
+            <p>Examples of forumulas</p>
+            <ul>
+              <li>
+                =1+2+3
+              </li>
+              <li>
+                =A1+A2+A3
+              </li>
+              <li>
+                =A3*B9
+              </li>
+              <li>
+                =$A$3*$C$3
+              </li>
+              <li>
+                =$A$3*$C$3+$B$3
+              </li>
+            </ul>
+          </article>
+      </section>
+      <section class="main-section" id="Functions">
+        <header>Functions</header>
+          <article>
+            <p>A function is a predefined formula already available in Excel. Functions streamline the process of creating a calculation. To date, Excel has more than 500 functions and on Microsoft 365, more functions are added all the time. Functions can do complex calculations that would be very time-consuming to build manually. For example, if you wanted to add up a range of cells without using a function, you’d need to write something like: =A1+A2+A3+...+A999 instead of =SUM(A1:A999). A good understanding of when and where to use these functions is a key skill in the FP&A and other heavy Financial Modeling & Analysis roles</p>
+            <p>Note: functions can be used with a formulas, and functions can contain logics</p>
+            <p>Examples of Functions(click list to see detailed explanations and applications)</p>
+            <ul>
+              <li>
+                <a class="function-link" href="=COUNTIF(A2:A5,A4)">=COUNTIF(A2:A5,A4)</a>
+                  <code>
+                    =COUNTIF(Where do you want to look?, What do you want to look for?)
+                  </code>
+              </li>
+              <li>
+                <a class="function-link" href="https://support.microsoft.com/en-us/office/sumif-function-169b8c99-c05c-4483-a712-1697a653039b">=SUMIFS(A3:A10,B3:B:10,B13,C3:C10,A13)</a>
+                  <code>
+                    SUMIFS(sum_range, criteria_range1, criteria1, [criteria_range2, criteria2], ...)
+                  </code>
+              </li>
+              <li>
+                <a class="function-link" href="https://support.microsoft.com/en-us/office/pmt-function-0214da64-9a63-4996-bc20-214433fa6441">=PMT(=PMT(A2/12,A3,A4))</a>
+                  <code>
+                    PMT(rate, nper, pv, [fv], [type])
+                  </code>
+              </li>
+              <li>
+                <a class="function-link" href="https://exceljet.net/index-and-match">=INDEX(C3:E11,MATCH(H2,B3:B11,0),2)</a>
+                  <code>
+                    MATCH(lookup_value, lookup_array, [match_type])
+                  <br>
+                    INDEX(array, row_num, [column_num])
+                  </code>
+              </li>
+              <li>
+                <a class="function-link" href="https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929">=XLOOKUP(D2,$B6:$B17,XLOOKUP($C3,$C5:$G5,$C6:$G17)).</a>
+                  <code>
+                    =XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode], [search_mode])
+                  </code>
+              </li>
+            </ul>
+          </article>
+      </section>
+      <section class="main-section" id="Export&Import">
+        <header>Export & Import</header>
+          <article>
+            <p>Excel can import and export many different file types aside from the standard .xslx format. If your data is shared between other programs, like a database, you may need to save data as a different file type or bring in files of a different file type.</p>
+<!--
+            <div class="responsive">
+            <iframe src="" width="560" height="315"></iframe>
+            </div>
+
+Maybe I'll add a video?-->
+
+
+<!--https://www.customguide.com/excel/how-to-import-data-into-excel = image soure for Export and Import-->
+            <p>Export</p>
+            <p>When you have data that needs to be transferred to another system, export it from Excel in a format that can be interpreted by other programs, such as a text or CSV file.</p>
+            <ol>
+              <li>
+                Click the File tab.
+                <image src="image/e1.jpeg" class="screenshots" alt="Visual Example/assistance">
+              </li>
+              <li>
+                At the left, click Export.
+              </li>
+              <li>
+                Click the Change File Type.
+              </li>
+              <li>
+                Under Other File Types, select a file type.
+                <ul>
+                  <li>
+                    Text (Tab delimited): The cell data will be separated by a tab.
+                  </li>
+                  <li>
+                    CSV (Comma delimited): The cell data will be separated by a comma.
+                  </li>
+                  <li>
+                    Formatted Text (space delimited): The cell data will be separated by a space.
+                  </li>
+                  <li>
+                    Save as Another File Type: Select a different file type when the Save As dialog box appears.
+                  </li>
+                    <span>  The file type you select will depend on what type of file is required by the program that will consume the exported data.</span>
+                </ul>
+              </li>
+              <li>
+                Click Save As.
+                <image src="image/e5.jpeg" class="screenshots" alt="Visual Example/assistance">
+              </li>
+              <li>
+                Specify where you want to save the file.
+              </li>
+              <li>
+                Click Save.
+                <image src="image/e7.jpeg" class="screenshots" alt="Visual Example/assistance">
+              </li>
+              <li>
+                Click Yes.
+              </li>
+            </ol>
+            <p>Import</p>
+            <p>Excel can import data from external data sources including other files, databases, or web pages.</p>
+            <ol>
+              <li>
+                Click the Data tab on the Ribbon.
+              </li>
+              <li>
+                Click the Get Data button. <br>
+                <span>  Some data sources may require special security access, and the connection process can often be very complex. Enlist the help of your organization’s technical support staff for assistance.</span>
+              </li>
+              <li>
+                Select From File.
+              </li>
+              <li>
+                Select From Text/CSV.
+                <image src="image/i4.jpeg" class="screenshots" alt="Visual Example/assistance">
+              </li>
+              <li>
+                Select the file you want to import.
+              </li>
+              <li>
+                Click Import.
+                <p>If, while importing external data, a security notice appears saying that it is connecting to an external source that may not be safe, click OK. </p>
+                <image src="image/i6.jpeg" class="screenshots" alt="Visual Example/assistance">
+              </li>
+              <li>
+                Verify the preview looks correct.
+                <p>Because we've specified the data is separated by commas, the delimiter is already set. If you need to change it, it can be done from this menu.</p>
+              </li>
+              <li>
+                Click Load.
+                <image src="image/i8.jpeg" class="screenshots" alt="Visual Example/assistance">
+              </li>
+            </ol>
+          </article>
+      </section>
+      <section class="main-section" id="Analysis">
+        <header>Analysis</header>
+          <article>
+            <div class="responsive">
+            <iframe src="https://www.microsoft.com/en-us/videoplayer/embed/RE4tecB?pid=ocpVideo0-innerdiv-oneplayer&postJsllMsg=true&maskLevel=20&market=en-us" width="560" height="315" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p>Analyze Data in Excel empowers you to understand your data through natural language queries that allow you to ask questions about your data without having to write complicated formulas. In addition, Analyze Data provides high-level visual summaries, trends, and patterns.If you are interested in exploring your data, or just want to know what is possible, Analyze Data also provides personalized suggested questions which you can access by selecting on the query box. </p>
+            <p>If you do not have a question in mind, in addition to Natural Language, Analyze Data analyzes and provides high-level visual summaries, trends, and patterns.</p>
+            <p>You can save time and get a more focused analysis by selecting only the fields you want to see. When you choose fields and how to summarize them, Analyze Data excludes other available data - speeding up the process and presenting fewer, more targeted suggestions. For example, you might only want to see the sum of sales by year. Or you could ask Analyze Data to display average sales by year. </p>
+            <p>Currently Available</p>
+            <ul>
+              <li>
+                Rank: Ranks and highlights the item that is significantly larger than the rest of the items.
+                <image src="image/Rank.jpeg" class="screenshots" alt="Visual Example/assistance">
+              </li>
+              <li>
+                Trend: Highlights when there is a steady trend pattern over a time series of data.
+                <image src="image/Trend.jpeg" class="screenshots" alt="Visual Example/assistance">
+              </li>
+              <li>
+                Outlier: Highlights outliers in time series.
+                <image src="image/Outlier.jpeg" class="screenshots" alt="Visual Example/assistance">
+              </li>
+              <li>
+                Majority: Finds cases where a majority of a total value can be attributed to a single factor.
+                <image src="image/Majority.jpeg" class="screenshots" alt="Visual Example/assistance">
+              </li>
+            </ul>
+            <h6> Pivot Table </h6>
+            <p>
+              A PivotTable is a powerful tool to calculate, summarize, and analyze data that lets you see comparisons, patterns, and trends in your data.
+            </p>
+            <p>
+              PivotTables work a little bit differently depending on what platform you are using to run Excel.
+            </p>
+            <ol>
+              <li>
+                Select the cells you want to create a PivotTable from.
+
+
+              </li>
+              <li>
+                Select Insert > PivotTable.
+                <image src="image/pivot1.jpeg" class="screenshots" alt="Visual Example/assistance">
+              </li>
+              <li>
+                This will create a PivotTable based on an existing table or range.
+                <image src="image/pivot2.jpeg" class="screenshots" alt="Visual Example/assistance">
+              </li>
+              <li>
+                Choose where you want the PivotTable report to be placed. Select New Worksheet to place the PivotTable in a new worksheet or Existing Worksheet and select where you want the new PivotTable to appear.
+              </li>
+              <li>
+                Click OK
+              </li>
+            </ol>
+            <p>
+              You can also generate a PivotTable from 3 other sources
+              <image src="image/pivot3.jpeg" class="screenshots" alt="Visual Example/assistance">
+            </p>
+            <ol>
+              <li>
+                From External Data Source
+                <image src="image/pivot4.jpeg" class="screenshots" alt="Visual Example/assistance">
+
+              </li>
+              <li>
+                From Data Model
+                <image src="image/pivot5.jpeg" class="screenshots" alt="Visual Example/assistance">
+
+              </li>
+              <li>
+                From Power BI
+                <image src="image/pivot6.jpeg" class="screenshots" alt="Visual Example/assistance">
+
+              </li>
+            </ol>
+          </article>
+      </section>
+<!--
+      <section class="main-section" id="Format">
+        <header>Format</header>
+          <article>
+            <p></p>
+            <p></p>
+            <p></p>
+            <ul>
+              <li>
+              </li>
+            </ul>
+          </article>
+      </section>
+      -->
+</div>
+</div>
+
+
+
+
+
+  </body>
+</html>
