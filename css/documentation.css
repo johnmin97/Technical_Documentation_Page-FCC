@@ -122,5 +122,23 @@ code{
   border-color: black;
   padding: 3px;
 }
-
+#cfi_link{
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  background-color: lime;
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#cfi_link:hover{
+  background-color: inherit;
+  opacity: 0.5;
+  color: red;
+}
+i{
+  font-weight: bolder;
+  font-size: 20px;
+}
 </style>
